@@ -1,0 +1,338 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track{
+background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:#fff;
+    border-radius: 5rem;
+}
+
+body{
+    background:#010103;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: #1b1b1b;
+    background: white;
+    background-size: 113px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: "Playfair Display", serif;
+}
+
+.btn:hover{
+    letter-spacing: 0.2rem;
+}
+
+.logo img{
+    width: 10rem;
+}
+
+a{
+    color: rgb(233, 200, 92);
+    font-family: "Playfair Display", serif;
+}
+
+.header{
+    background: #010103;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: 0.1rem solid rgba(255,255,255,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    }
+
+.header .logo image{
+    height: 4rem;
+}
+
+.header .navbar a{
+    margin: 0.6rem;
+    font-size: 2rem;
+    color #df9b07;
+    font-weight: 400;
+}
+
+.header .navbar a:hover{
+    color: #fff;
+    border-bottom: 0.1rem solid #df9b07;
+    padding-bottom: 0.5rem;
+}   
+
+.header .icons div{
+    color: #fff;
+    cursor: pointer ;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div.hover{
+    color:#df9b07;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header search-form{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #000;
+    padding: 1rem;
+    text-transform: none;
+}
+
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: #000;
+}
+
+.header .search-form lable:hover{
+    color: #df9b07;
+}
+
+.header .cart-items-container{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding: 0 1.5rem;
+}
+
+.header .cart-items-container.active{
+    right: 0;
+}
+
+.header .cart-items-container .cart-items{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header .cart-items-container .cart-items .fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.header .cart-items-container .cart-items .fa-times:hover{
+    color: #df9b07;
+} 
+
+.header .cart-items-container .cart-items img{
+    height: 14rem;
+}
+
+.header .cart-items-container .cart-items .content h3{
+    font-size: 2rem;
+    color: #000;
+    padding-bottom: 0.5rem;
+}
+
+.header .cart-items-container .cart-items .content .price{
+    font-size: 1.5rem;
+    color: #df9b07;
+}
+
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+}
+
+/* home */
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url() no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: rgb(233, 200, 92);
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+}
+
+.home .content p{
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
+    font-weight: 100;
+    font-family: "Playfair Display", serif;
+}
+
+/* start about */
+.about .row{
+    display: flex;
+    align-items: center;
+    background: #000;
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: rgb(233, 200, 92);
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+}
+
+.about .row .content p{
+    font-size: 2rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+    font-family: "Playfair Display", serif;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+}
+
+.heading span{
+    color: rgb(233, 200, 92);
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+}
+
+/* menu */
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: #fff;
+}
+
+.menu .box-container .box img{
+    height: 10rem;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: rgb(233, 200, 92);
+    font-size: 2.5rem;
+    padding: 5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 2rem;
+    text-decoration: line-through red;
+    font-weight: lighter;
+    color: #a1a0a0;
+}
+
+.menu .box-container .box:hover{
+    background: #000;
+    border: solid rgb(233, 200, 92);
+}
+
+.menu .box-container .box:hover > *{
+    color: #7f8106;
+}
